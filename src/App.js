@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { getRandomBool, getSuggestions } from "./utils";
+import { getSuggestions } from "./utils";
 
 function App() {
   const [searchData, setSearchData] = useState("");
@@ -15,7 +15,6 @@ function App() {
         setErr(false);
         setSearchRes(res);
       } catch (error) {
-
         setErr(true);
         setSearchRes([]);
       }
